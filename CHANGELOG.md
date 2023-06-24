@@ -1,0 +1,1 @@
+# @kodehort/prettier-config
