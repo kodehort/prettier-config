@@ -6,7 +6,7 @@ enabling updates to be pulled forward into consuming projects.
 
 ## Installation
 
-1. You'll first need to install [ESLint](https://eslint.org/):
+1. You'll first need to install [Prettier](https://prettier.io/):
 
 ```sh
 npm install prettier --save-dev
@@ -31,7 +31,7 @@ configuration file. Here's an example `prettier.config.cjs` file
 
 ```javascript
 module.exports = {
-  ...require("@kodehort/prettier-config"),
+  ...require('@kodehort/prettier-config'),
   semi: false,
-};
+}
 ```
