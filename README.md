@@ -1,7 +1,10 @@
 # prettier-config
 
-`prettier-config` is a curated set of prettier configurations that can be
-across our projects and can be used in your projects. Rather than add this all to a template it is included as a package
+[![npm version](https://badge.fury.io/js/@kodehort%2Fprettier-config.svg)](https://badge.fury.io/js/@kodehort%2Fprettier-config)
+
+`prettier-config` is a curated prettier configuration that can be
+across our projects and can be used in your projects. Rather than
+add this all to a template, it is included as a package
 enabling updates to be pulled forward into consuming projects.
 
 ## Installation
