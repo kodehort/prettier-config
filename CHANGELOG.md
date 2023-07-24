@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 1.0.2
+
+### Patch Changes
+
+- 5fabf57: add jsx parsing
+
 ## 1.0.1
 
 ### Patch Changes
