@@ -1,7 +1,14 @@
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
   arrowParens: 'always',
-  importOrder: ['<THIRD_PARTY_MODULES>', '<BUILTIN_MODULES>', '', '^[./]'],
+  importOrder: [
+    '<BUILTIN_MODULES>',
+    '',
+    '<THIRD_PARTY_MODULES>',
+    '',
+    '^[~/]',
+    '^[.]',
+  ],
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   importOrderTypeScriptVersion: '5.0.0',
   jsxSingleQuote: false,
