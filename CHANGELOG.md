@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 1.1.1
+
+### Patch Changes
+
+- afb5653: update deps
+
 ## 1.1.0
 
 ### Minor Changes
