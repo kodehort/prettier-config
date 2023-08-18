@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 1.1.2
+
+### Patch Changes
+
+- dd32bb4: fix(deps): update dependency prettier-plugin-tailwindcss to ^0.5.0
+
 ## 1.1.1
 
 ### Patch Changes
