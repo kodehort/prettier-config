@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 1.1.3
+
+### Patch Changes
+
+- c0811a5: Remove external types
+
 ## 1.1.2
 
 ### Patch Changes
