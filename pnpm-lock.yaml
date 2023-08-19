@@ -7,25 +7,22 @@ settings:
 dependencies:
   '@ianvs/prettier-plugin-sort-imports':
     specifier: ^4.1.0
-    version: 4.1.0(prettier@3.0.0)
-  '@types/prettier':
-    specifier: ^3.0.0
-    version: 3.0.0
+    version: 4.1.0(prettier@3.0.2)
   prettier:
     specifier: ^3.0.0
-    version: 3.0.0
+    version: 3.0.2
   prettier-plugin-astro:
-    specifier: ^0.11.0
-    version: 0.11.0
+    specifier: ^0.11.1
+    version: 0.11.1
   prettier-plugin-curly:
     specifier: ^0.1.2
-    version: 0.1.2(prettier@3.0.0)
+    version: 0.1.2(prettier@3.0.2)
   prettier-plugin-packagejson:
     specifier: ^2.4.5
-    version: 2.4.5(prettier@3.0.0)
+    version: 2.4.5(prettier@3.0.2)
   prettier-plugin-tailwindcss:
-    specifier: ^0.5.0
-    version: 0.5.0(@ianvs/prettier-plugin-sort-imports@4.1.0)(prettier-plugin-astro@0.11.0)(prettier@3.0.0)
+    specifier: ^0.5.3
+    version: 0.5.3(@ianvs/prettier-plugin-sort-imports@4.1.0)(prettier-plugin-astro@0.11.1)(prettier@3.0.2)
 
 devDependencies:
   '@changesets/cli':
@@ -42,8 +39,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
     dev: false
 
-  /@astrojs/compiler@1.6.1:
-    resolution: {integrity: sha512-QZZhV2kOhvyXEfpaGLgHWNPUOlkMVx3Zw+5IlXXU2p448NwtyYt3C6MuS7baVsTlluH3EedAoDBmelt9hPhfiQ==}
+  /@astrojs/compiler@1.8.2:
+    resolution: {integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==}
     dev: false
 
   /@babel/code-frame@7.22.5:
@@ -427,7 +424,7 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@ianvs/prettier-plugin-sort-imports@4.1.0(prettier@3.0.0):
+  /@ianvs/prettier-plugin-sort-imports@4.1.0(prettier@3.0.2):
     resolution: {integrity: sha512-IAXeTLU24k6mRPa6mFbW1qZJ/j0m3OeH44wyijWyr+YqqdNtBnfHxAntOAATS9iDfrT01NesKGsdzqnXdDQa/A==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.0.0'
@@ -441,7 +438,7 @@ packages:
       '@babel/parser': 7.22.7
       '@babel/traverse': 7.22.8
       '@babel/types': 7.22.5
-      prettier: 3.0.0
+      prettier: 3.0.2
       semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
@@ -548,13 +545,6 @@ packages:
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
-
-  /@types/prettier@3.0.0:
-    resolution: {integrity: sha512-mFMBfMOz8QxhYVbuINtswBp9VL2b4Y0QqYHwqLz3YbgtfAcat2Dl6Y1o4e22S/OVE6Ebl9m7wWiMT2lSbAs1wA==}
-    deprecated: This is a stub types definition. prettier provides its own type definitions, so you do not need this installed.
-    dependencies:
-      prettier: 3.0.1
-    dev: false
 
   /@types/semver@7.5.0:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
@@ -1864,16 +1854,16 @@ packages:
       which-pm: 2.0.0
     dev: true
 
-  /prettier-plugin-astro@0.11.0:
-    resolution: {integrity: sha512-rl2hJ4Kty/aEfGjk3i4JS+bpng9MjgvwqLRNzeb9NqYhqKoWNwOR39cIJXFjU1vR3zYOPnwWNRMelKb0orunYA==}
-    engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
+  /prettier-plugin-astro@0.11.1:
+    resolution: {integrity: sha512-28sf624jQz9uP4hkQiRPRVuG1/4XJpnS6DfoXPgeDAeQ+eQ1o21bpioUbxze57y2EN+BCHeEw6x3a1MhM08Liw==}
+    engines: {node: ^14.15.0 || >=16.0.0}
     dependencies:
-      '@astrojs/compiler': 1.6.1
-      prettier: 3.0.1
-      sass-formatter: 0.7.6
+      '@astrojs/compiler': 1.8.2
+      prettier: 3.0.2
+      sass-formatter: 0.7.7
     dev: false
 
-  /prettier-plugin-curly@0.1.2(prettier@3.0.0):
+  /prettier-plugin-curly@0.1.2(prettier@3.0.2):
     resolution: {integrity: sha512-DNc9cd7SI/p9hJ2/HanlRgdb5s2nFO9ZZXXe/HsdPFSF7fbs7zYKsh0lEncuWMhGTBePQbVJjv94jEcNXhlaTw==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -1881,12 +1871,12 @@ packages:
     dependencies:
       '@babel/parser': 7.22.7
       '@babel/traverse': 7.22.8
-      prettier: 3.0.0
+      prettier: 3.0.2
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /prettier-plugin-packagejson@2.4.5(prettier@3.0.0):
+  /prettier-plugin-packagejson@2.4.5(prettier@3.0.2):
     resolution: {integrity: sha512-glG71jE1gO3y5+JNAhC8X+4yrlN28rub6Aj461SKbaPie9RgMiHKcInH2Moi2VGOfkTXaEHBhg4uVMBqa+kBUA==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -1894,13 +1884,13 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 3.0.0
+      prettier: 3.0.2
       sort-package-json: 2.5.1
       synckit: 0.8.5
     dev: false
 
-  /prettier-plugin-tailwindcss@0.5.0(@ianvs/prettier-plugin-sort-imports@4.1.0)(prettier-plugin-astro@0.11.0)(prettier@3.0.0):
-    resolution: {integrity: sha512-EpP/Hg/D/LzjKJ+gYiSnsqk+PkrHSFQAuRHx/sj3O4r2kH0iJAOrKeKmI1X4Fm96M1BY+tO0KiV+/Y03MYbArg==}
+  /prettier-plugin-tailwindcss@0.5.3(@ianvs/prettier-plugin-sort-imports@4.1.0)(prettier-plugin-astro@0.11.1)(prettier@3.0.2):
+    resolution: {integrity: sha512-M5K80V21yM+CTm/FEFYRv9/9LyInYbCSXpIoPAKMm8zy89IOwdiA2e4JVbcO7tvRtAQWz32zdj7/WKcsmFyAVg==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -1908,7 +1898,7 @@ packages:
       '@shopify/prettier-plugin-liquid': '*'
       '@shufo/prettier-plugin-blade': '*'
       '@trivago/prettier-plugin-sort-imports': '*'
-      prettier: ^2.2 || ^3.0
+      prettier: ^3.0
       prettier-plugin-astro: '*'
       prettier-plugin-css-order: '*'
       prettier-plugin-import-sort: '*'
@@ -1951,9 +1941,9 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.1.0(prettier@3.0.0)
-      prettier: 3.0.0
-      prettier-plugin-astro: 0.11.0
+      '@ianvs/prettier-plugin-sort-imports': 4.1.0(prettier@3.0.2)
+      prettier: 3.0.2
+      prettier-plugin-astro: 0.11.1
     dev: false
 
   /prettier@2.8.8:
@@ -1962,14 +1952,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier@3.0.0:
-    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: false
-
-  /prettier@3.0.1:
-    resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: false
@@ -2101,8 +2085,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass-formatter@0.7.6:
-    resolution: {integrity: sha512-hXdxU6PCkiV3XAiSnX+XLqz2ohHoEnVUlrd8LEVMAI80uB1+OTScIkH9n6qQwImZpTye1r1WG1rbGUteHNhoHg==}
+  /sass-formatter@0.7.7:
+    resolution: {integrity: sha512-axtQ7c7Cf4UgHsD8e4okhIkkc90+tdgBIfUMx69+qJuMNq9EOo2k+RH/mDKj0XeA5z3nC1Ca5TCntuxRhI+1MA==}
     dependencies:
       suf-log: 2.5.3
     dev: false
