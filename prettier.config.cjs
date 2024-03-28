@@ -1,3 +1,5 @@
+const { resolve } = require('node:path')
+
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
   arrowParens: 'always',
@@ -13,12 +15,12 @@ module.exports = {
   importOrderTypeScriptVersion: '5.0.0',
   jsxSingleQuote: false,
   plugins: [
-    require.resolve('@ianvs/prettier-plugin-sort-imports'),
-    require.resolve('prettier-plugin-astro'),
-    require.resolve('prettier-plugin-curly'),
-    require.resolve('prettier-plugin-packagejson'),
-    require.resolve('prettier-plugin-tailwindcss'),
-  ],
+    '@ianvs/prettier-plugin-sort-imports',
+    'prettier-plugin-astro',
+    'prettier-plugin-curly',
+    'prettier-plugin-packagejson',
+    'prettier-plugin-tailwindcss',
+  ].map(require.resolve),
   printWidth: 80,
   proseWrap: 'always',
   semi: false,
