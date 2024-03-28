@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 1.1.4
+
+### Patch Changes
+
+- 6f616f1: chore(deps): update dependency @changesets/cli to v2.27.1
+
 ## 1.1.3
 
 ### Patch Changes
