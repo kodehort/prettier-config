@@ -1,5 +1,12 @@
 # @kodehort/prettier-config
 
+## 1.1.5
+
+### Patch Changes
+
+- a078d07: fix(deps): update dependency prettier-plugin-tailwindcss to v0.5.13
+- fd70009: feat: update permissions in GitHub workflow
+
 ## 1.1.4
 
 ### Patch Changes
