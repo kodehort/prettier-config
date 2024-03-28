@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 1.1.6
+
+### Patch Changes
+
+- 9e6f4d7: Refactor the way we import plugins
+
 ## 1.1.5
 
 ### Patch Changes
