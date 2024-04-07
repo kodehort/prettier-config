@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 2.0.3
+
+### Patch Changes
+
+- 769cb95: import plugins at build time
+
 ## 2.0.2
 
 ### Patch Changes
