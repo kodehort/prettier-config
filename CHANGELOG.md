@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 2.0.2
+
+### Patch Changes
+
+- 83cc449: fix release with build step
+
 ## 2.0.1
 
 ### Patch Changes
