@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 2.0.0
+
+### Major Changes
+
+- 2d1c068: Rewrite in typescrip
+
 ## 1.1.6
 
 ### Patch Changes
