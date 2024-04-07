@@ -1,7 +1,6 @@
-const { resolve } = require('node:path')
+import { PrettierConfig } from '@ianvs/prettier-plugin-sort-imports'
 
-/** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
-module.exports = {
+export default {
   arrowParens: 'always',
   importOrder: [
     '<BUILTIN_MODULES>',
@@ -14,13 +13,15 @@ module.exports = {
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   importOrderTypeScriptVersion: '5.0.0',
   jsxSingleQuote: false,
-  plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-astro',
-    'prettier-plugin-curly',
-    'prettier-plugin-packagejson',
-    'prettier-plugin-tailwindcss',
-  ].map(require.resolve),
+  plugins: await Promise.all(
+    [
+      '@ianvs/prettier-plugin-sort-imports',
+      'prettier-plugin-astro',
+      'prettier-plugin-curly',
+      'prettier-plugin-packagejson',
+      'prettier-plugin-tailwindcss',
+    ].map(async (path) => await import(path)),
+  ),
   printWidth: 80,
   proseWrap: 'always',
   semi: false,
@@ -28,4 +29,4 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',
-}
+} satisfies PrettierConfig

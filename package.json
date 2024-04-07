@@ -5,9 +5,19 @@
   "repository": "https://github.com/kodehort/prettier-config",
   "license": "MIT",
   "author": "Kodehort Limited",
-  "main": "prettier.config.cjs",
-  "types": "prettier.config.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf node_modules",
+    "dev": "tsc --watch",
     "release": "changeset publish"
   },
   "dependencies": {
@@ -18,7 +28,9 @@
     "prettier-plugin-tailwindcss": "^0.5.3"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2"
+    "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.12.5",
+    "typescript": "^5.4.4"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"

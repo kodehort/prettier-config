@@ -30,11 +30,14 @@ pnpm add @kodehort/prettier-config -D
 ## Usage
 
 To use `prettier-config`, you need to extend it in your prettier
-configuration file. Here's an example `prettier.config.cjs` file
+configuration file. Here's an example `prettier.config.js` file
 
-```javascript
-module.exports = {
-  ...require('@kodehort/prettier-config'),
+```javascript prettier.config.js
+import prettierConfig from '@kodehort/prettier-config'
+
+/** @type {import("prettier").Config} */
+export default {
+  ...prettierConfig,
   semi: false,
 }
 ```
