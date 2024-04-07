@@ -1,5 +1,11 @@
 import { PrettierConfig } from '@ianvs/prettier-plugin-sort-imports'
 
+import imports from '@ianvs/prettier-plugin-sort-imports'
+import astro from 'prettier-plugin-astro'
+import curly from 'prettier-plugin-curly'
+import packagejson from 'prettier-plugin-packagejson'
+import tailwindcss from 'prettier-plugin-tailwindcss'
+
 export default {
   arrowParens: 'always',
   importOrder: [
@@ -13,15 +19,13 @@ export default {
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   importOrderTypeScriptVersion: '5.0.0',
   jsxSingleQuote: false,
-  plugins: await Promise.all(
-    [
-      '@ianvs/prettier-plugin-sort-imports',
-      'prettier-plugin-astro',
-      'prettier-plugin-curly',
-      'prettier-plugin-packagejson',
-      'prettier-plugin-tailwindcss',
-    ].map(async (path) => await import(path)),
-  ),
+  plugins:[
+    imports,
+    astro,
+    curly,
+    packagejson,
+    tailwindcss,
+  ],
   printWidth: 80,
   proseWrap: 'always',
   semi: false,
