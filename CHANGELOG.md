@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 2.0.4
+
+### Patch Changes
+
+- bbc4789: Update docs and plugin config
+
 ## 2.0.3
 
 ### Patch Changes
