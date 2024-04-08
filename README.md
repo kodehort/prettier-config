@@ -33,11 +33,28 @@ To use `prettier-config`, you need to extend it in your prettier
 configuration file. Here's an example `prettier.config.js` file
 
 ```javascript prettier.config.js
-import prettierConfig from '@kodehort/prettier-config'
+import prettierConfig from "@kodehort/prettier-config";
 
 /** @type {import("prettier").Config} */
 export default {
   ...prettierConfig,
   semi: false,
+};
+```
+
+## FAQs
+
+### Module type of the repository has an impact in the configuration file
+
+If the package is defined with type `module` in the `package.json` file, you
+need to use the `.js` extension for the configuration file. This
+is because the `import` statement is not supported in CommonJS files.
+
+````json package.json
+{
+  "type": "module"
 }
 ```
+
+Otherwise you can use the `.mjs` extension for the configuration file.
+````
