@@ -1,5 +1,12 @@
 # @kodehort/prettier-config
 
+## 2.0.5
+
+### Patch Changes
+
+- 4027f49: fix(deps): update dependency prettier-plugin-packagejson to v2.4.14
+- a152a6a: use dynamic require for plugins again
+
 ## 2.0.4
 
 ### Patch Changes
