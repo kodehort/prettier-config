@@ -1,6 +1,6 @@
 import { PrettierConfig } from "@ianvs/prettier-plugin-sort-imports";
 
-export default {
+export const baseConfig = {
   arrowParens: "always",
   importOrder: [
     "<BUILTIN_MODULES>",
@@ -14,11 +14,11 @@ export default {
   importOrderTypeScriptVersion: "5.0.0",
   jsxSingleQuote: false,
   plugins: [
-    require("@ianvs/prettier-plugin-sort-imports"),
-    require("prettier-plugin-astro"),
-    require("prettier-plugin-curly"),
+    import("@ianvs/prettier-plugin-sort-imports"),
+    import("prettier-plugin-astro"),
+    import("prettier-plugin-curly"),
     require("prettier-plugin-packagejson"),
-    require("prettier-plugin-tailwindcss"),
+    import("prettier-plugin-tailwindcss"),
   ],
   printWidth: 80,
   proseWrap: "always",
@@ -27,4 +27,12 @@ export default {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: "all",
+  overrides: [
+    {
+      files: "*.astro",
+      options: {
+        parser: "astro",
+      },
+    },
+  ],
 } satisfies PrettierConfig;
