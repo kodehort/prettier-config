@@ -2,14 +2,7 @@ import { PrettierConfig } from "@ianvs/prettier-plugin-sort-imports";
 
 export const baseConfig = {
   arrowParens: "always",
-  importOrder: [
-    "<BUILTIN_MODULES>",
-    "",
-    "<THIRD_PARTY_MODULES>",
-    "",
-    "^[~/]",
-    "^[.]",
-  ],
+  importOrder: ["<BUILTIN_MODULES>", "", "<THIRD_PARTY_MODULES>", "", "^[.]/"],
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
   importOrderTypeScriptVersion: "5.0.0",
   jsxSingleQuote: false,
@@ -28,6 +21,12 @@ export const baseConfig = {
   tabWidth: 2,
   trailingComma: "all",
   overrides: [
+    {
+      files: ["tsconfig.json"],
+      options: {
+        parser: "jsonc",
+      },
+    },
     {
       files: "*.astro",
       options: {
