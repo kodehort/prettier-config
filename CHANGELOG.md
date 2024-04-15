@@ -1,5 +1,12 @@
 # @kodehort/prettier-config
 
+## 2.0.6
+
+### Patch Changes
+
+- c0ae790: fix(deps): update dependency prettier-plugin-packagejson to v2.5.0
+- c75e3e7: Configure jsonc parser for tsconfig.json
+
 ## 2.0.5
 
 ### Patch Changes
