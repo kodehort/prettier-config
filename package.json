@@ -4,7 +4,6 @@
   "description": "A curated set of prettier configurations that we use across our projects and can be used in your projects.",
   "repository": "https://github.com/kodehort/prettier-config",
   "license": "MIT",
-  "type": "module",
   "author": "Alistair Stead",
   "exports": {
     ".": {
