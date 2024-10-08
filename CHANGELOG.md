@@ -1,5 +1,15 @@
 # @kodehort/prettier-config
 
+## 3.0.0
+
+### Major Changes
+
+- ac53591: update deps and switch to tsup
+
+### Patch Changes
+
+- 4641d57: change of package file
+
 ## 2.0.6
 
 ### Patch Changes
