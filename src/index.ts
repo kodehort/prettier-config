@@ -1,4 +1,9 @@
-import { PrettierConfig } from "@ianvs/prettier-plugin-sort-imports";
+import { type PrettierConfig } from "@ianvs/prettier-plugin-sort-imports";
+import astro from "prettier-plugin-astro";
+import packageJson from "prettier-plugin-packagejson";
+import sortImports from "@ianvs/prettier-plugin-sort-imports";
+import curly from "prettier-plugin-curly";
+import tailwindcss from "prettier-plugin-tailwindcss";
 
 export const baseConfig = {
   arrowParens: "always",
@@ -6,13 +11,7 @@ export const baseConfig = {
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
   importOrderTypeScriptVersion: "5.0.0",
   jsxSingleQuote: false,
-  plugins: [
-    import("@ianvs/prettier-plugin-sort-imports"),
-    import("prettier-plugin-astro"),
-    import("prettier-plugin-curly"),
-    require("prettier-plugin-packagejson"),
-    import("prettier-plugin-tailwindcss"),
-  ],
+  plugins: [sortImports, astro, curly, packageJson, tailwindcss],
   printWidth: 80,
   proseWrap: "always",
   semi: false,
@@ -25,6 +24,7 @@ export const baseConfig = {
       files: ["tsconfig.json"],
       options: {
         parser: "jsonc",
+        trailingComma: "none",
       },
     },
     {
