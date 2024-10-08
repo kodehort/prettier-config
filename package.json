@@ -1,6 +1,6 @@
 {
   "name": "@kodehort/prettier-config",
-  "version": "2.0.6",
+  "version": "3.0.0",
   "description": "A curated set of prettier configurations that we use across our projects and can be used in your projects.",
   "repository": "https://github.com/kodehort/prettier-config",
   "license": "MIT",
