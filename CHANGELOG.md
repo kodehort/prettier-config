@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 3.0.1
+
+### Patch Changes
+
+- 5001cdd: fix imports
+
 ## 3.0.0
 
 ### Major Changes
