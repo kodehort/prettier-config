@@ -10,11 +10,11 @@
     ".": {
       "import": {
         "types": "./lib/index.d.mts",
-        "default": "./lib/index.mjs"
+        "default": "./lib/index.js"
       },
       "require": {
         "types": "./lib/index.d.ts",
-        "default": "./lib/index.js"
+        "default": "./lib/index.cjs"
       }
     }
   },
@@ -27,8 +27,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "clean": "rm -rf node_modules",
-    "dev": "tsc --watch",
+    "dev": "tsup --watch",
     "release": "changeset publish"
   },
   "dependencies": {
