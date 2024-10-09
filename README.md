@@ -33,12 +33,12 @@ To use `prettier-config`, you need to extend it in your prettier
 configuration file. Here's an example `prettier.config.js` file
 
 ```javascript prettier.config.js
-import prettierConfig from "@kodehort/prettier-config";
+import { baseConfig } from "@kodehort/prettier-config";
 
 /** @type {import("prettier").Config} */
 export default {
-  ...prettierConfig,
-  semi: false,
+  ...baseConfig,
+  /** Add your project specific configurations here */
 };
 ```
 
