@@ -1,9 +1,9 @@
 import { type PrettierConfig } from "@ianvs/prettier-plugin-sort-imports";
-import astro from "prettier-plugin-astro";
-import packageJson from "prettier-plugin-packagejson";
-import sortImports from "@ianvs/prettier-plugin-sort-imports";
-import curly from "prettier-plugin-curly";
-import tailwindcss from "prettier-plugin-tailwindcss";
+import * as sortImports from "@ianvs/prettier-plugin-sort-imports";
+import * as astro from "prettier-plugin-astro";
+import * as curly from "prettier-plugin-curly";
+import * as packageJson from "prettier-plugin-packagejson";
+import * as tailwindcss from "prettier-plugin-tailwindcss";
 
 export const baseConfig = {
   arrowParens: "always",
@@ -35,3 +35,5 @@ export const baseConfig = {
     },
   ],
 } satisfies PrettierConfig;
+
+export default baseConfig;
