@@ -13,12 +13,12 @@
   "bugs": {
     "url": "https://github.com/kodehort/prettier-config/issues"
   },
-  "author": "Alistair Stead <alistair@kodehort.com> (https://kodehort.com)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kodehort/prettier-config.git"
   },
   "license": "MIT",
+  "author": "Alistair Stead <alistair@kodehort.com> (https://kodehort.com)",
   "type": "module",
   "exports": {
     ".": {
@@ -37,11 +37,11 @@
     "dist"
   ],
   "scripts": {
-    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports && pnpm run lint",
     "build": "tsup",
-    "dev": "tsup --watch",
-    "check-format": "prettier --config ./dist/index.js --check .",
     "check-exports": "attw --pack .",
+    "check-format": "prettier --config ./dist/index.js --check .",
+    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports && pnpm run lint",
+    "dev": "tsup --watch",
     "lint": "tsc",
     "release": "changeset publish"
   },
