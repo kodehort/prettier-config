@@ -23,7 +23,7 @@ jobs:
           version: 8
           run_install: false
 
-      - uses: actions/setup-node@v4.0.2
+      - uses: actions/setup-node@v4.0.4
         with:
           node-version: 20.x
 
