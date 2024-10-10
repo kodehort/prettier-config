@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 3.0.2
+
+### Patch Changes
+
+- f47f2c2: resolve default imports and exports
+
 ## 3.0.1
 
 ### Patch Changes
