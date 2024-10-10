@@ -18,11 +18,7 @@
 
     /* If transpiling with TypeScript: */
     "module": "NodeNext",
-    "outDir": "lib",
-    "sourceMap": true,
-
-    /* AND if you're building for a library: */
-    "declaration": true
-  },
-  "include": ["src"]
+    "lib": ["es2022"],
+    "noEmit": true
+  }
 }

@@ -2,32 +2,47 @@
   "name": "@kodehort/prettier-config",
   "version": "3.0.2",
   "description": "A curated set of prettier configurations that we use across our projects and can be used in your projects.",
-  "repository": "https://github.com/kodehort/prettier-config",
+  "keywords": [
+    "prettier",
+    "config",
+    "astro",
+    "sort-imports",
+    "tailwindcss"
+  ],
+  "homepage": "https://github.com/kodehort/prettier-config",
+  "bugs": {
+    "url": "https://github.com/kodehort/prettier-config/issues"
+  },
+  "author": "Alistair Stead <alistair@kodehort.com> (https://kodehort.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodehort/prettier-config.git"
+  },
   "license": "MIT",
   "type": "module",
-  "author": "Alistair Stead",
   "exports": {
     ".": {
       "import": {
-        "types": "./lib/index.d.mts",
-        "default": "./lib/index.js"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
       },
       "require": {
-        "types": "./lib/index.d.cts",
-        "default": "./lib/index.cjs"
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       }
     }
   },
-  "main": "./lib/index.cjs",
+  "main": "./dist/index.js",
   "files": [
-    "lib/",
-    "package.json",
-    "LICENSE.md",
-    "README.md"
+    "dist"
   ],
   "scripts": {
+    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports && pnpm run lint",
     "build": "tsup",
     "dev": "tsup --watch",
+    "check-format": "prettier --config ./dist/index.js --check .",
+    "check-exports": "attw --pack .",
+    "lint": "tsc",
     "release": "changeset publish"
   },
   "dependencies": {
@@ -38,6 +53,7 @@
     "prettier-plugin-tailwindcss": "^0.6.8"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.4",
     "@changesets/cli": "^2.27.9",
     "@types/node": "^22.7.5",
     "tsup": "^8.3.0",
