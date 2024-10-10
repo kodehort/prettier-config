@@ -1,5 +1,11 @@
 # @kodehort/prettier-config
 
+## 3.0.3
+
+### Patch Changes
+
+- 6f8910b: bump to pass version collision
+
 ## 3.0.2
 
 ### Patch Changes
