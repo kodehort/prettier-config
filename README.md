@@ -50,11 +50,10 @@ If the package is defined with type `module` in the `package.json` file, you
 need to use the `.js` extension for the configuration file. This is because the
 `import` statement is not supported in CommonJS files.
 
-````json package.json
+```json package.json
 {
   "type": "module"
 }
 ```
 
 Otherwise you can use the `.mjs` extension for the configuration file.
-````
