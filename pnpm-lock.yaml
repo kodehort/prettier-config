@@ -38,10 +38,10 @@ importers:
         version: 22.9.1
       tsup:
         specifier: ^8.3.0
-        version: 8.3.5(typescript@5.6.2)
+        version: 8.3.5(typescript@5.7.2)
       typescript:
         specifier: ^5.6.2
-        version: 5.6.2
+        version: 5.7.2
 
 packages:
 
@@ -1248,8 +1248,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typescript@5.6.2:
-    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+  typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2388,7 +2388,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.3.5(typescript@5.6.2):
+  tsup@8.3.5(typescript@5.7.2):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
@@ -2407,7 +2407,7 @@ snapshots:
       tinyglobby: 0.2.10
       tree-kill: 1.2.2
     optionalDependencies:
-      typescript: 5.6.2
+      typescript: 5.7.2
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -2416,7 +2416,7 @@ snapshots:
 
   typescript@5.6.1-rc: {}
 
-  typescript@5.6.2: {}
+  typescript@5.7.2: {}
 
   undici-types@6.19.8: {}
 
